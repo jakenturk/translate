@@ -2,31 +2,41 @@
     width: 100%;
     height: 80vh;
     position: relative;
+    background: white;
+    clip-path: ellipse(105% 100% at 74.2% 0%);
 
     &__picture {
-        background-image: url('../images/bigpicture.jpg');
+        background-image: url(../images/bigpicture.jpg);
+        position: absolute;
+        width: 587px;
+        height: 530px;
+        background-size: cover;
+        right: 290px;
+        top: 30px;
+        border-radius: 10px;
+        /* @mixin laptop {
+            filter: blur(6px);
+        } */
+    }
+
+    &__bgFilter {
+        background: $lightYellowBg;
         position: absolute;
         width: 100%;
         height: 100%;
-        background-size: cover;
-        filter: blur(4px);
-        box-shadow: 0 0 1px 10px #555;
-        
-        @mixin laptop {
-            filter: blur(6px);
-        }
+
     }
 
     &__title {
         position: absolute;
         z-index: 1;
-        top: 50%;
-        left: 50%;
+        top: 30%;
+        left: 45%;
         transform: translate(-50%, -50%);
         font-size: 1.8rem;
-        text-align: center;
+        text-align: left;
         
-        @mixin tablet {
+        /* @mixin tablet {
             color: red;
         }
 
@@ -36,10 +46,14 @@
 
         @mixin large {
             color: blue;
-        }
-        
-        /* &--red {
-
         } */
+        
+        &--h1 {
+            font-size: 5rem;
+        }
+
+        &--p {
+            font-size: 2rem;
+        }
     }
 }
