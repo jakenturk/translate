@@ -1,37 +1,37 @@
 .bigpicture {
     width: 100%;
-    height: 80vh;
+    height: 70vh;
     position: relative;
-    background: white;
+    background: $bgFilter;
     clip-path: ellipse(105% 100% at 74.2% 0%);
-
-    &__picture {
-        background-image: url(../images/bigpicture.jpg);
+    color: white;
+    box-shadow: inset 1px 1px 8px 0px #000;
+    /*&__picture {
+        
         position: absolute;
         width: 587px;
         height: 530px;
-        background-size: cover;
-        right: 290px;
-        top: 30px;
-        border-radius: 10px;
+        right: 0;
+        top: 0;
         /* @mixin laptop {
             filter: blur(6px);
         } */
-    }
+    /*}*/
 
     &__bgFilter {
-        background: $lightYellowBg;
+        background-image: url(../images/bigpicture.jpg);
+        background-size: cover;
         position: absolute;
         width: 100%;
         height: 100%;
-
+        opacity: .3;
     }
 
     &__title {
         position: absolute;
         z-index: 1;
-        top: 30%;
-        left: 45%;
+        top: 42%;
+        left: 50%;
         transform: translate(-50%, -50%);
         font-size: 1.8rem;
         text-align: left;

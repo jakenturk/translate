@@ -1,0 +1,43 @@
+.skills {
+    position: relative;
+    height: 80vh;
+    width: 100%;
+    background: lightgray;
+
+    &__shapes {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        fill: $lightBrown;
+    }
+
+    &__shapes svg {
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+        height: 80px;
+        transform: rotateY(180deg);
+    }
+
+    &__flexContainer {
+        display: flex;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    &__flexContainer > div {
+        background: white;
+        margin: 10px;
+        padding: 20px;
+        font-size: 30px;
+        width: 400px;
+        height: 500px;
+    }
+}

@@ -3,3 +3,5 @@
 @import 'base/_mixins';
 @import 'modules/_bigpicture';
 @import 'modules/_bio';
+@import 'modules/_skills';
+@import 'modules/_footer';
